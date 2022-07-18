@@ -1,0 +1,200 @@
+/* GENERAL */
+*{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/* HEADER */
+.logo{
+	width: 52px;
+	height: 48px;
+}
+
+
+/* PRINCIPAL */
+.main{
+	height: 100vh;
+	max-width: 100vw;
+}
+
+.main-img{
+	object-fit: cover;
+}
+
+.main-sombra{
+	z-index: 1;
+}
+
+.main-content{
+	z-index: 1;
+}
+
+/* MAIN-TEXT */
+@media (min-width: 576px) {
+	.main-text{
+		font-size: 1rem;
+		font-weight: 300;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.main-text{
+		font-size: 1.05rem;
+		font-weight: 300;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.main-text{
+		font-size: 1.15rem;
+		font-weight: 300;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.main-text{
+			font-size: 1.25rem;
+			font-weight: 300;
+		}
+}
+
+
+@media (min-width: 1400px) {
+	.main-text{
+			font-size: 1.25rem;
+			font-weight: 300;
+		}
+}
+
+.s_media{
+	z-index: 2;
+}
+
+/* SECCION 1 | TIERRA DEL FUEGO */
+#seccion1{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+#seccion1::before{
+	content: "";
+	position: absolute;
+	top: -100px;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(transparent, #000);
+	z-index: 1000;
+}
+
+#seccion1::after{
+	content: "";
+	position: absolute;
+	bottom: -75px;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(#000, #212529);
+	z-index: 1000;
+}
+
+/* SECCION 2 | NEUQUEN*/
+/* SECCION2 CONTENT */
+#seccion2{
+	padding-top: 70px;
+}
+
+.seccion2-content{
+	padding-bottom: 70px;
+}
+
+.seccion2-card-content{
+	min-height: 805px;
+}
+
+.seccion2-sombra{
+ 	z-index: 1;
+}
+
+.card-img-overlay{
+	z-index: 1;
+}
+
+/* SECCION2 IMG */
+.seccion2-card-img{
+	object-fit: cover!important;
+}
+
+
+/* SECCION 3 | MISIONES */
+#seccion3{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.seccion3-card-img{
+	object-fit: cover!important;
+	object-position: right;
+}
+
+@media (min-width: 768px) {
+	.seccion3-card_row{
+		min-height: 290px;
+	}
+	
+	.conteiner_seccion3-card-img{
+		max-height: 290px;
+	}
+}
+
+#seccion3::before{
+	content: "";
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(transparent, #000);
+	z-index: 1000;
+}
+
+#seccion3::after{
+	content: "";
+	position: absolute;
+	bottom: -45px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(#000, #212529);
+	z-index: 1000;
+}
+
+@media (max-width: 768px) {
+	#seccion3::after{
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(#000, #212529);
+	z-index: 1000;
+	}
+}
+
+/* FOOTER */
+@media (max-width: 550px) {
+	.footer-s_media{
+		margin: auto;
+		
+	}
+}
+
+@media (max-width: 375px) {
+	.footer-conteiner_custom {
+    padding-right: 0.35rem!important;
+    padding-left: 0.35rem!important;
+	}
+}
+
